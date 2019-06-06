@@ -2,7 +2,7 @@
 layout: default
 title: 블록체인이 뭐지?
 ---
-<img src="흠터레스팅.png">
+<img src="./test2_files/흠터레스팅.png">
 <br><br>블록체인은 무엇을 말하는 걸까?
 
 단순히 생각했을 때, 블록 + 체인? => 체인으로 연결된 블록??
