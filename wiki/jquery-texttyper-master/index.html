@@ -1,0 +1,62 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Text Animation</title>
+
+		<meta name="description" content="A modal concept which aims to give a sense of depth between the page and modal layers">
+		<meta name="author" content="Pathik Gandhi">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Pulled from http://code.google.com/p/html5shiv/ -->
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="main">
+			<div class="block">
+				<h2>Simple Block Text</h2>
+				<div class="simpleDiv">TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+				<pre>
+					$('div.simpleDiv').textTyper();
+				</pre>
+			</div>
+			<div class="block">
+				<div class="simpleDiv1">
+					<h2>Simple Block Text With Child Elements</h2>
+					<div>TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+				</div>
+				<pre>
+					$('div.simpleDiv').textTyper({speed:20});
+				</pre>
+			</div>
+			<div class="block">
+				<div class="simpleDiv2">
+					<h2>Simple Block Text Animate Two Times</h2>
+					<div>TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+				</div>
+				<pre>
+					$('div.simpleDiv').textTyper({repeatTimes:true,repeatTimes:2});
+				</pre>
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>-->
+		<script type="text/javascript" src="js/textTyper-min.js"></script>
+		<script>
+		
+			$('div.simpleDiv').textTyper();
+			$('div.simpleDiv1').textTyper({speed:20});
+			$('div.simpleDiv2').textTyper({repeatAnimation:true,repeatTimes:2});
+		</script>
+	</body>
+</html>

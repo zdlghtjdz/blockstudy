@@ -1,0 +1,187 @@
+﻿<head>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel= "stylesheet" type="text/css" href="css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+
+</head>
+
+<body>
+<section id="home">
+<h2>Mining Simulation</h2>
+<p>Block Chain tutorial will be started</p>
+<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+<p>Mining 이라고 입력해 주세요.</p>
+</section>
+
+<section id="Mining">
+<h2><span>&raquo;Mining...</span></h2>
+<p>
+
+Starting mining operation 
+<p> Updated mining threads                   threads=0
+<p> Transaction pool price threshold updated price=18000000000
+<p> Starting mining operation 
+<p> Commit new mining work                   number=42 txs=0 uncles=0 elapsed=0s
+<p> Generating DAG in progress               epoch=1 elapsed=1m4.074s
+<p> Successfully sealed new block            number=42 hash =
+<p> 🔨 mined potential block                  number=42 hash=
+<p> Commit new mining work                   number=43 txs=0 uncles=0 elapsed=0s
+<p> Generating DAG in progress               epoch=1 elapsed=1m6.668s
+<p> Successfully sealed new block            number=43 hash =
+<p> 🔨 mined potential block                  number=43 hash =
+<p> Mining Operation End..
+   
+</section>
+
+<section id="error">
+        <p>Command not found!<p> 
+        <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+        </section>
+<span class="command">command:/$<input type="text"></span>
+
+<section id="help">
+        <h2><span>&raquo;Help?</span></h2>
+        <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+        <ul>
+            <li>'home' -- 초기화면으로 돌아갑니다.</li>
+            <li>'mining()' -- 블럭에 대한 마이닝을 실행합니다.</li>
+            <li>'help' -- 제공되는 명령어 리스트를 제공합니다.</li>
+        </ul>
+        </section>
+<script>
+    
+    function MonthSet() {
+        var d = new Date;
+        var month = d.getMonth() + 1
+        
+        return month;
+
+    }
+
+    function HourSet() {
+        var d = new Date;
+        var h = d.getHours();
+        //setInterval(HourSet(), 1000);
+        return h;
+       
+    }
+    function DaySet() {
+        var d = new Date;
+        var dd = d.getDate();
+        //setInterval(DaySet(), 1000);
+        return dd;
+    }
+
+    function MinuteSet() {
+        var d = new Date;
+        var m = d.getMinutes();
+        m = dasi(m);
+       // setInterval(MinuteSet(), 1000);
+        return m;
+      
+
+    }
+
+    function SecondSet() {
+        var d = new Date;
+        var s = d.getSeconds();
+        s = dasi(s);
+        //setInterval(SecondSet(), 1000);
+        return s;
+
+    }
+// 
+    function dasi(i) {
+        if (i<10) {i = "0" + i};
+        return i;
+    }
+    
+    function pad(d) {
+        return (d < 10) ? '0' + d.toString() : d.toString();
+    }
+    
+    $(document).ready(function() {
+        var textP = $("#mining p");
+        GenerateHMAC('sha256', randomString());
+        $.each(textP, (index, elem) => {
+            var second = SecondSet();
+            var minute = MinuteSet();
+            if(index < 3) {
+                second = pad(Number(second));
+                minute = pad(Number(minute));
+                elem.prepend("INFO [" + MonthSet() + "-" +  DaySet() + "|" + HourSet() + ":" + minute + ":" + second + "]");
+            } else if(index < 6) {
+                second = Number(second);
+                minute = Number(minute);
+                second++;
+                if(second === 60) {
+                    minute++;
+                    second = 00;
+                }
+                minute = pad(minute);
+                second = pad(second);
+                elem.prepend("INFO [" + MonthSet() + "-" +  DaySet() + "|" + HourSet() + ":" + minute + ":" + second + "]");
+            } else if(index < 9) {
+                second = Number(second);
+                second++;
+                second++;
+                if(second === 60) {
+                    minute++;
+                    second = 00;
+                } else if(second === 61) {
+                    minute++;
+                    second = 01;
+                }
+                minute = pad(minute);
+                second = pad(second);
+                elem.prepend("INFO [" + MonthSet() + "-" +  DaySet() + "|" + HourSet() + ":" + minute + ":" + second + "]");
+            } else {
+                second = Number(second);
+                second++;
+                second++;
+                second++;
+                if(second === 60) {
+                    minute++;
+                    second = 00;
+                } else if(second === 61) {
+                    minute++;
+                    second = 01;
+                } else if(second === 62) {
+                    minute++;
+                    second = 02;
+                }
+                minute = pad(minute);
+                second = pad(second);
+                elem.prepend("INFO [" + MonthSet() + "-" +  DaySet() + "|" + HourSet() + ":" + MinuteSet() + ":" + second + "]");
+            }
+        });
+    });  
+        
+</script>
+<script>
+function randomString() {
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+    var string_length = 5;
+    var randomstring = '';
+    for (var i=0; i<string_length; i++) {
+    var rnum = Math.floor(Math.random() * chars.length);
+    randomstring += chars.substring(rnum,rnum+1);
+    }
+}
+function GenerateHMAC(key, payload) {
+	var timestamp = new Date().getTime();
+	var message = btoa(payload + timestamp);
+	var hash = CryptoJS.HmacSHA256(message, key);
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+        $('#Mining p:contains("block")').append(hashInBase64);
+}
+</script>
+<script>		
+        $('div.simpleDiv').textTyper();
+        $('div.simpleDiv1').textTyper({speed:20});
+        $('div.simpleDiv2').textTyper({repeatAnimation:true,repeatTimes:2});
+        
+</script>
+</body>
