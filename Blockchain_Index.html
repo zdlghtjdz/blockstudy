@@ -1,124 +1,361 @@
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://zdlghtjdz.github.io/blockstudy/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+ 
+  
 
- <body>
-        <style> .toBeRevealed{display:none} </style>
-        <div class="row">
-        <h1>INDEX</h1>
 
-        <p><li>블록체인 <button type="button" class="btn-next1">설명열기</button></li> </p>
-        <div class="question1 toBeRevealed">
-                블록체인(영어: block-chain, blockchain)은 관리 대상 데이터를 '블록'이라고 하는 소규모 데이터들이<br> P2P 방식을 기반으로 생성된 체인 형태의 연결고리 기반 분산 데이터 저장환경에 저장되어 <br>누구라도 임의로 수정할 수 없고 누구나 변경의 결과를 열람할 수 있는 <br>분산 컴퓨팅 기술 기반의 데이터 대변 방지 기술이다. 
-                이는 근본적으로 분산 데이터 저장기술의 한 형태로, <br>지속적으로 변경되는 데이터를 모든 참여 노드에 기록한 변경 리스트로서 <br>분산 노드의 운영자에 의한 임의 조작이 불가능하도록 고안되었다. <br>
-                블록체인 기술은 비트코인을 비롯한 대부분의 암호화폐 거래에 사용된다.<br> 
-                암호화폐의 거래과정은 탈중앙화된 전자장부에 쓰이기 때문에<br> 블록체인 소프트웨어를 실행하는 많은 사용자들의 각 컴퓨터에서 서버가 운영되어 <br>중앙은행 없이 개인 간의 자유로운 거래가 가능하다.<br>
-          
-        </div>
-        <p><li>비트코인 <button type="button" class="btn-next2">설명열기</button></li></p>
-        <div class="question2 toBeRevealed">
-                비트코인(bitcoin)은 블록체인 기술을 기반으로 만들어진 온라인 암호화폐이다.<br> 비트코인의 화폐 단위는 BTC 또는 XBT로 표시한다.<br> 2008년 10월 사토시 나카모토라는 가명을 쓰는 프로그래머가 개발하여, 2009년 1월 프로그램 소스를 배포했다.<br> 중앙은행이 없이 전 세계적 범위에서 P2P 방식으로 개인들 간에 자유롭게 송금 등의 금융거래를 할 수 있게 설계되어 있다.<br> 거래장부는 블록체인 기술을 바탕으로 전 세계적인 범위에서 여러 사용자들의 서버에 분산하여 저장하기 때문에 해킹이 사실상 불가능하다.<br> SHA-256 기반의 암호 해시 함수를 사용한다.<br>
-                2009년 비트코인의 소스 코드가 공개되었고,<br> 이더리움, 이더리움 클래식, 리플, 라이트코인, 에이코인, 대시, 모네로, 제트캐시, 퀀텀 등 다양한 알트코인들이 생겨났다.<br> 알트코인은 비트코인 이후에 등장한 암호화폐를 의미하며,<br> 비트코인은 여러 알트코인들 사이에서 일종의 기축통화 역할을 하고 있다.<br>
-            </div>
-            <p><li>이더리움 <button type="button" class="btn-next3">설명열기</button></li></p>
-        <div class="question3 toBeRevealed">
-                이더리움은 2015년 7월 30일 비탈릭 부테린(Vitalik Buterin)이 개발하였다.<br>
-                비탈릭 부테린은 가상화폐인 비트코인에 사용된 핵심 기술인 블록체인에 화폐 거래 기록뿐 아니라 계약서 등의 추가 정보를 기록할 수 있다는 점에 착안하여,<br>
-                전 세계 수많은 사용자들이 보유하고 있는 컴퓨팅 자원을 활용해 이더리움 가상 머신(EVM)을 만들고,
-                <br> 이 플랫폼을 이용하여 SNS, 이메일, 전자투표 등 다양한 정보를 기록하는 시스템을 창안했다.<br> 
-                이더리움은 C++, 자바, 파이썬, GO 등 주요 프로그래밍 언어를 지원한다.<br>
-            </div>
-            <p> <li>스마트 컨트랙트(Smart Contract) <button type="button" class="btn-next4">설명열기</button></li></p>
-          <div class="question4 toBeRevealed">
-                스마트 계약(smart contract) 또는 스마트 컨트랙트란 블록체인 기반으로<br>
-                금융거래, 부동산 계약, 공증 등 다양한 형태의 계약을 체결하고 이행하는 것을 말한다.<br>
-         </div>
-               
-        <p><li>합의 알고리즘 <button type="button" class="btn-next9">설명열기</button></li></p>
-        <div class="question9 toBeRevealed">
-                합의 알고리즘(consensus algorithm)이란 다수의 참여자들이 통일된 의사결정을 하기 위해 사용하는 알고리즘을 말한다.<br>
-                합의 모델, 합의 방식, 합의 메커니즘 또는 합의 프로토콜이라고도 한다. <br>
-                블록체인 시스템의 경우 네트워크에 참여하는 모든 참여자들이 동일한 데이터를 복사하여 분산 저장하기 때문에 원본과 사본의 구별이 없으며,<br> 
-                통일된 의사결정을 내릴 수 있는 권위 있는 중앙(center)이 존재하지 않는다. <br>
-                이런 상황에서 합리적이고 효율적인 의사결정을 내릴 수 있는 다양한 알고리즘이 개발되었다.<br>
-        </div>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width">
 
-         <p></p> <li>PoW <button type="button" class="btn-next7">설명열기</button></li></p>
-          <div class="question7 toBeRevealed">
-                작업 증명 시스템(proof-of-work (PoW) system 또는 protocol, function)은<br>
-                서비스 요청자로부터 일부 작업을 요구함으로써(일반적으로 컴퓨터에 의한 처리 시간을 의미)<br> 
-                서비스 거부(DoS) 공격과 기타 서비스 악용(예: 네트워크 상의 스팸)을 단념하게 만들기 위한 경제적인 수단이다.<br>
-                이 개념은 1993년의 어느 한 잡지 기사에서 제시된 바에 따르면 Cynthia Dwork와 Moni Naor에 의해 발명되었다.<br>
-         </div>
-         <p>  <li>PoS <button type="button" class="btn-next8">설명열기</button></li></p>
-          <div class="question8 toBeRevealed">
-                지분 증명(Proof-of-stake, PoS)이란 알고리즘의 한 형태로서,<br>
-                이를 통해 암호화폐 블록체인 네트워크가 분산화된 합의를 얻는 것을 목표로 한다.<br>
-                지분 증명 기반의 암호화폐 시스템에서 다음 블록의 생성자는 블록체인의 관련 암호화폐를 특정량 보유하고 있는 ‘주주’들 중에서 선출된다.<br>
-                이는 암호화폐 채굴을 활용하는 비트코인이나 이더리움과 같은 작업 증명 기반 시스템과 대조되는 것이다.<br>
-                암호화폐 채굴이란 거래를 검증하기 위한 복잡한 문제를 풂으로써 새로운 화폐를 출시하는 것을 완곡하게 표현한 것이다.<br>
-         </div>
-        
-        <p> <li>Transactions <button type="button" class="btn-next10">설명열기</button></li></p>
-        <div class="question10 toBeRevealed">
-            트랜잭션은 블록체인 내의 데이터를 쓰는 것을 의미한다.<br>
-            사용자가 게시판에 글을 썼을 경우 글을 쓴 것은 트랜젝션을 만든 것이라고 할 수 있고 <br>
-            글을 등록 한 것은 블록체인에 트랜젝션을 보낸 것이라고 할 수 있다.<br>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>블록체인 학습</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="git-wiki">
+<meta property="og:locale" content="ko">
+<meta name="description" content="블록체인을 배워봅시다아~">
+<meta property="og:description" content="블록체인을 배워봅시다아~">
+<link rel="canonical" href="https://zdlghtjdz.github.io/blockstudy/">
+<meta property="og:url" content="https://zdlghtjdz.github.io/blockstudy/">
+<meta property="og:site_name" content="블록체인 학습 콘텐츠">
+<script type="application/ld+json">
+{"headline":"git-wiki","@type":"WebSite","url":"https://zdlghtjdz.github.io/blockstudy/","name":"블록체인 학습 콘텐츠 모델","description":"블록체인을 배워봅시다아~","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-        </div>
-        <p>  <li>SHA-256 <button type="button" class="btn-next11">설명열기</button></li></p>
-        <div class="question11 toBeRevealed">
-                많은 종류의 해시함수 중 하나이다. <br>
-                현재 이 홈페이지의 해시함수 또한 SHA-256을 사용하여 해시값을 만들어 내었다.<br>
-        </div>
+
+
+  
+
+<script src="./index_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="./index_files/toc.js"></script>
+<script src="./index_files/red-links.js"></script>
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+  
+
+<link rel="stylesheet" href="./index_files/git-wiki-style.css">
+
+
+
+  
+  <link rel="shortcut icon" type="image/png" href="https://zdlghtjdz.github.io/blockstudy/assets/images/%ED%9D%A0%ED%84%B0%EB%A0%88%EC%8A%A4%ED%8C%85.png">
+
+  
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class=" w3-xlarge w3-hide-large" id="git-wiki-mobile-header">
+  <button class="w3-button w3-teal" onclick="sidebar_toggle()">☰</button>
+  <a href="https://zdlghtjdz.github.io/blockstudy/">
+    <img src="./index_files/흠터레스팅.png" width="20px">
+    블록체인 학습 콘텐츠
+  </a>
+</div>
+<header class="w3-sidebar w3-bar-block w3-collapse" id="git-wiki-sidebar">
+  <div>
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebar_toggle()">Close ×</button>
     
+
+    <div class="w3-hide-medium w3-hide-small">
+      
+      <div class="git-wiki-main-logo">
+    <a href="https://zdlghtjdz.github.io/blockstudy/"><img src="./index_files/흠터레스팅.png">
+        <h1 style="font-weight:bold;">블록체인 학습 콘텐츠</h1>
+    </a>
+    <p style="font-size:20px; font-weight:300;" >블록체인을 배워봅시다아~</p>
+</div>
+      
+    </div>
+    
+
+    
+    <div class="git-wiki-page-list">
+  
+    
+
+    <span class="page-list-title" style="font-size:20px; font-weight:300;" >학습 목록 :</span>
+    <ul class="page-list" style="font-size:20px; font-weight:300;">
+    
+        
+          
+        <li class="page-list-item">
+            
+          <a href="https://zdlghtjdz.github.io/blockstudy/wiki/ledgerstory.html">블록체인이 뭐지?</a>
+      </li>
+      
+      <li class="page-list-item">
+            
+            <a href="https://zdlghtjdz.github.io/blockstudy/wiki/hash1.html">해시 암호화 체험</a>
+        </li>
+
+
+      <li class="page-list-item">
+            
+          <a href="https://zdlghtjdz.github.io/blockstudy/wiki/block.html">블록 모형</a>
+      </li>
+
+
+      <li class="page-list-item">
+            
+            <a href="https://zdlghtjdz.github.io/blockstudy/wiki/blockchain.html">블록체인 모형</a>
+        </li>
+
+
+
+      <li class="page-list-item">
+            
+            <a href="https://zdlghtjdz.github.io/blockstudy/wiki/distributed.html">분산 블록체인 모형</a>
+        </li>
+
+      
+      
+    <li class="page-list-item">
+            
+      <a href="https://zdlghtjdz.github.io/blockstudy/wiki/main.html">채굴(Mining) 체험</a>
+  </li>
+        
+
+  <li class="page-list-item">
+            
+        <a href="https://zdlghtjdz.github.io/blockstudy/Blockchain_Index.html">블록체인 인덱스</a>
+        </li>
+      
+        
+    </ul>
+
+    
+</div>
+    
+
+    
+    <div class="git-wiki-page-list">
+    
+
+    </ul>
+
+    
+</div>
+    
+
+    
+  </div>
+</header>
 <script>
-         (function() {
-        var Q1 = $('.question1');//각 설명들을 JQuery로 class이름을 태그로 잡아둠
-        var Q2 = $('.question2');
-        var Q3 = $('.question3');
-        var Q4 = $('.question4');
-        var Q7 = $('.question7');
-        var Q8 = $('.question8');
-        var Q9 = $('.question9');
-        var Q10 = $('.question10');
-        var Q11 = $('.question11');
-
-        var btn1 = $('.btn-next1');//버튼의 class이름을 태그로 잡아둠
-        var btn2 = $('.btn-next2');
-        var btn3 = $('.btn-next3');
-        var btn4 = $('.btn-next4');
-        var btn7 = $('.btn-next7');
-        var btn8 = $('.btn-next8');
-        var btn9 = $('.btn-next9');
-        var btn10 = $('.btn-next10');
-        var btn11 = $('.btn-next11');
-
-        btn1.click(function () {
-                    Q1.removeClass('toBeRevealed');
-                });
-        btn2.click(function () {
-                    Q2.removeClass('toBeRevealed');
-                });
-        btn3.click(function () {
-                    Q3.removeClass('toBeRevealed');
-                });
-        btn4.click(function () {
-                    Q4.removeClass('toBeRevealed');
-                });
-        btn7.click(function () {
-                    Q7.removeClass('toBeRevealed');
-                });
-        btn8.click(function () {
-                    Q8.removeClass('toBeRevealed');
-                });
-        btn9.click(function () {
-                    Q9.removeClass('toBeRevealed');
-                });
-        btn10.click(function () {
-                    Q10.removeClass('toBeRevealed');
-                });
-        btn11.click(function () {
-                    Q11.removeClass('toBeRevealed');
-                });
-         });
+  function sidebar_toggle() {
+    var sidebar = document.getElementById("git-wiki-sidebar");
+    if (sidebar.style.display == "block") {
+      sidebar.style.display = "none";
+      sidebar.style.position = "inherit";
+    } else {
+      $(sidebar).attr('style', 'display: block;');
+    }
+  }
 </script>
-</body>
+
+    <div class="git-wiki-page">
+  <section>
+
+  
+    <div id="git-wiki-toc" style="display: none;"></div>
+
+    
+
+    
+
+    <div id="git-wiki-content">
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+            
+                   <style> .toBeRevealed{display:none} </style>
+                   <div class="row">
+                   <h1>INDEX</h1>
+           
+                   <p><li>블록체인 <button type="button" class="btn-next1">설명열기</button></li> </p>
+                   <div class="question1 toBeRevealed">
+                           블록체인(영어: block-chain, blockchain)은 관리 대상 데이터를 '블록'이라고 하는 소규모 데이터들이<br> P2P 방식을 기반으로 생성된 체인 형태의 연결고리 기반 분산 데이터 저장환경에 저장되어 <br>누구라도 임의로 수정할 수 없고 누구나 변경의 결과를 열람할 수 있는 <br>분산 컴퓨팅 기술 기반의 데이터 대변 방지 기술이다. 
+                           이는 근본적으로 분산 데이터 저장기술의 한 형태로, <br>지속적으로 변경되는 데이터를 모든 참여 노드에 기록한 변경 리스트로서 <br>분산 노드의 운영자에 의한 임의 조작이 불가능하도록 고안되었다. <br>
+                           블록체인 기술은 비트코인을 비롯한 대부분의 암호화폐 거래에 사용된다.<br> 
+                           암호화폐의 거래과정은 탈중앙화된 전자장부에 쓰이기 때문에<br> 블록체인 소프트웨어를 실행하는 많은 사용자들의 각 컴퓨터에서 서버가 운영되어 <br>중앙은행 없이 개인 간의 자유로운 거래가 가능하다.<br>
+                     
+                   </div>
+                   <p><li>비트코인 <button type="button" class="btn-next2">설명열기</button></li></p>
+                   <div class="question2 toBeRevealed">
+                           비트코인(bitcoin)은 블록체인 기술을 기반으로 만들어진 온라인 암호화폐이다.<br> 비트코인의 화폐 단위는 BTC 또는 XBT로 표시한다.<br> 2008년 10월 사토시 나카모토라는 가명을 쓰는 프로그래머가 개발하여, 2009년 1월 프로그램 소스를 배포했다.<br> 중앙은행이 없이 전 세계적 범위에서 P2P 방식으로 개인들 간에 자유롭게 송금 등의 금융거래를 할 수 있게 설계되어 있다.<br> 거래장부는 블록체인 기술을 바탕으로 전 세계적인 범위에서 여러 사용자들의 서버에 분산하여 저장하기 때문에 해킹이 사실상 불가능하다.<br> SHA-256 기반의 암호 해시 함수를 사용한다.<br>
+                           2009년 비트코인의 소스 코드가 공개되었고,<br> 이더리움, 이더리움 클래식, 리플, 라이트코인, 에이코인, 대시, 모네로, 제트캐시, 퀀텀 등 다양한 알트코인들이 생겨났다.<br> 알트코인은 비트코인 이후에 등장한 암호화폐를 의미하며,<br> 비트코인은 여러 알트코인들 사이에서 일종의 기축통화 역할을 하고 있다.<br>
+                       </div>
+                       <p><li>이더리움 <button type="button" class="btn-next3">설명열기</button></li></p>
+                   <div class="question3 toBeRevealed">
+                           이더리움은 2015년 7월 30일 비탈릭 부테린(Vitalik Buterin)이 개발하였다.<br>
+                           비탈릭 부테린은 가상화폐인 비트코인에 사용된 핵심 기술인 블록체인에 화폐 거래 기록뿐 아니라 계약서 등의 추가 정보를 기록할 수 있다는 점에 착안하여,<br>
+                           전 세계 수많은 사용자들이 보유하고 있는 컴퓨팅 자원을 활용해 이더리움 가상 머신(EVM)을 만들고,
+                           <br> 이 플랫폼을 이용하여 SNS, 이메일, 전자투표 등 다양한 정보를 기록하는 시스템을 창안했다.<br> 
+                           이더리움은 C++, 자바, 파이썬, GO 등 주요 프로그래밍 언어를 지원한다.<br>
+                       </div>
+                       <p> <li>스마트 컨트랙트(Smart Contract) <button type="button" class="btn-next4">설명열기</button></li></p>
+                     <div class="question4 toBeRevealed">
+                           스마트 계약(smart contract) 또는 스마트 컨트랙트란 블록체인 기반으로<br>
+                           금융거래, 부동산 계약, 공증 등 다양한 형태의 계약을 체결하고 이행하는 것을 말한다.<br>
+                    </div>
+                          
+                   <p><li>합의 알고리즘 <button type="button" class="btn-next9">설명열기</button></li></p>
+                   <div class="question9 toBeRevealed">
+                           합의 알고리즘(consensus algorithm)이란 다수의 참여자들이 통일된 의사결정을 하기 위해 사용하는 알고리즘을 말한다.<br>
+                           합의 모델, 합의 방식, 합의 메커니즘 또는 합의 프로토콜이라고도 한다. <br>
+                           블록체인 시스템의 경우 네트워크에 참여하는 모든 참여자들이 동일한 데이터를 복사하여 분산 저장하기 때문에 원본과 사본의 구별이 없으며,<br> 
+                           통일된 의사결정을 내릴 수 있는 권위 있는 중앙(center)이 존재하지 않는다. <br>
+                           이런 상황에서 합리적이고 효율적인 의사결정을 내릴 수 있는 다양한 알고리즘이 개발되었다.<br>
+                   </div>
+           
+                    <p></p> <li>PoW <button type="button" class="btn-next7">설명열기</button></li></p>
+                     <div class="question7 toBeRevealed">
+                           작업 증명 시스템(proof-of-work (PoW) system 또는 protocol, function)은<br>
+                           서비스 요청자로부터 일부 작업을 요구함으로써(일반적으로 컴퓨터에 의한 처리 시간을 의미)<br> 
+                           서비스 거부(DoS) 공격과 기타 서비스 악용(예: 네트워크 상의 스팸)을 단념하게 만들기 위한 경제적인 수단이다.<br>
+                           이 개념은 1993년의 어느 한 잡지 기사에서 제시된 바에 따르면 Cynthia Dwork와 Moni Naor에 의해 발명되었다.<br>
+                    </div>
+                    <p>  <li>PoS <button type="button" class="btn-next8">설명열기</button></li></p>
+                     <div class="question8 toBeRevealed">
+                           지분 증명(Proof-of-stake, PoS)이란 알고리즘의 한 형태로서,<br>
+                           이를 통해 암호화폐 블록체인 네트워크가 분산화된 합의를 얻는 것을 목표로 한다.<br>
+                           지분 증명 기반의 암호화폐 시스템에서 다음 블록의 생성자는 블록체인의 관련 암호화폐를 특정량 보유하고 있는 ‘주주’들 중에서 선출된다.<br>
+                           이는 암호화폐 채굴을 활용하는 비트코인이나 이더리움과 같은 작업 증명 기반 시스템과 대조되는 것이다.<br>
+                           암호화폐 채굴이란 거래를 검증하기 위한 복잡한 문제를 풂으로써 새로운 화폐를 출시하는 것을 완곡하게 표현한 것이다.<br>
+                    </div>
+                   
+                   <p> <li>Transactions <button type="button" class="btn-next10">설명열기</button></li></p>
+                   <div class="question10 toBeRevealed">
+                       트랜잭션은 블록체인 내의 데이터를 쓰는 것을 의미한다.<br>
+                       사용자가 게시판에 글을 썼을 경우 글을 쓴 것은 트랜젝션을 만든 것이라고 할 수 있고 <br>
+                       글을 등록 한 것은 블록체인에 트랜젝션을 보낸 것이라고 할 수 있다.<br>
+           
+                   </div>
+                   <p>  <li>SHA-256 <button type="button" class="btn-next11">설명열기</button></li></p>
+                   <div class="question11 toBeRevealed">
+                           많은 종류의 해시함수 중 하나이다. <br>
+                           현재 이 홈페이지의 해시함수 또한 SHA-256을 사용하여 해시값을 만들어 내었다.<br>
+                   </div>
+               
+           <script>
+                    (function() {
+                   var Q1 = $('.question1');//각 설명들을 JQuery로 class이름을 태그로 잡아둠
+                   var Q2 = $('.question2');
+                   var Q3 = $('.question3');
+                   var Q4 = $('.question4');
+                   var Q7 = $('.question7');
+                   var Q8 = $('.question8');
+                   var Q9 = $('.question9');
+                   var Q10 = $('.question10');
+                   var Q11 = $('.question11');
+           
+                   var btn1 = $('.btn-next1');//버튼의 class이름을 태그로 잡아둠
+                   var btn2 = $('.btn-next2');
+                   var btn3 = $('.btn-next3');
+                   var btn4 = $('.btn-next4');
+                   var btn7 = $('.btn-next7');
+                   var btn8 = $('.btn-next8');
+                   var btn9 = $('.btn-next9');
+                   var btn10 = $('.btn-next10');
+                   var btn11 = $('.btn-next11');
+           
+                   btn1.click(function () {
+                               Q1.removeClass('toBeRevealed');
+                           });
+                   btn2.click(function () {
+                               Q2.removeClass('toBeRevealed');
+                           });
+                   btn3.click(function () {
+                               Q3.removeClass('toBeRevealed');
+                           });
+                   btn4.click(function () {
+                               Q4.removeClass('toBeRevealed');
+                           });
+                   btn7.click(function () {
+                               Q7.removeClass('toBeRevealed');
+                           });
+                   btn8.click(function () {
+                               Q8.removeClass('toBeRevealed');
+                           });
+                   btn9.click(function () {
+                               Q9.removeClass('toBeRevealed');
+                           });
+                   btn10.click(function () {
+                               Q10.removeClass('toBeRevealed');
+                           });
+                   btn11.click(function () {
+                               Q11.removeClass('toBeRevealed');
+                           });
+                    });
+           </script>
+           
+           
+
+    
+    <div id="disqus_thread" style="margin-top:100px;"></div>
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    
+//     var disqus_config = function () {
+//     this.page.url = 'https://zdlghtjdz.github.io/blockstudy;  // Replace PAGE_URL with your page's canonical URL variable
+// //     this.page.identifier = 'dktl1qkf'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+//     };
+   
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://git-wiki.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>다음 사이트를 보려고 하거든 자바스크립트를 enable 시켜주세요 <a href="https://disqus.com/?ref_noscript">Disqus로 생성한 댓글 기능</a></noscript>
+
+    
+  </section>
+</div>
+    <footer>
+    
+
+    
+<div class="git-wiki-copyrights">
+    <p>이 프로젝트는 <a href="https://github.com/zdlghtjdz">zdlghtjdz</a>에 의해 작성되고 있습니다.</p>
+    
+    <p><small>이 기트허브 페이지는 <a href="https://github.com/Drassil/git-wiki">Git-Wiki v2.3.1</a> 로부터 지원받고 있습니다.</small></p><small>
+
+    
+    <p class="view"><a href="https://github.com/zdlghtjdz/blockstudy">프로젝트 기트허브 방문<small></small></a></p>
+</small></div><small>
+
+
+    
+</small></footer><small>
+</small></div><small>
+
+    
+
+<script src="./index_files/scale.fix.js"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#git-wiki-toc').toc({
+            title: '<i>Contents</i>',
+            showSpeed: 0,
+            headers: '#git-wiki-content h1, #git-wiki-content h2, #git-wiki-content h3, #git-wiki-content h4, #git-wiki-content h5, #git-wiki-content h6'
+        });
+        $(document.body).redLinks();
+    });
+</script>
+
+
+
+
+
+</small></body></html>
