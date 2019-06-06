@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://zdlghtjdz.github.io/blockstudy/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+ 
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>블록체인 학습</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="git-wiki">
+<meta property="og:locale" content="ko">
+<meta name="description" content="블록체인을 배워봅시다아~">
+<meta property="og:description" content="블록체인을 배워봅시다아~">
+<link rel="canonical" href="https://zdlghtjdz.github.io/blockstudy/">
+<meta property="og:url" content="https://zdlghtjdz.github.io/blockstudy/">
+<meta property="og:site_name" content="블록체인 학습 콘텐츠">
+<script type="application/ld+json">
+{"headline":"git-wiki","@type":"WebSite","url":"https://zdlghtjdz.github.io/blockstudy/","name":"블록체인 학습 콘텐츠 모델","description":"블록체인을 배워봅시다아~","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+  
+
+<script src="./index_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="./index_files/toc.js"></script>
+<script src="./index_files/red-links.js"></script>
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+  
+
+<link rel="stylesheet" href="./index_files/git-wiki-style.css">
+
+
+
+  
+  <link rel="shortcut icon" type="image/png" href="https://zdlghtjdz.github.io/blockstudy/assets/images/%ED%9D%A0%ED%84%B0%EB%A0%88%EC%8A%A4%ED%8C%85.png">
+
+  
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class=" w3-xlarge w3-hide-large" id="git-wiki-mobile-header">
+  <button class="w3-button w3-teal" onclick="sidebar_toggle()">☰</button>
+  <a href="https://zdlghtjdz.github.io/blockstudy/">
+    <img src="./index_files/흠터레스팅.png" width="20px">
+    블록체인 학습 콘텐츠
+  </a>
+</div>
+<header class="w3-sidebar w3-bar-block w3-collapse" id="git-wiki-sidebar">
+  <div>
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebar_toggle()">Close ×</button>
+    
+
+    <div class="w3-hide-medium w3-hide-small">
+      
+      <div class="git-wiki-main-logo">
+    <a href="https://zdlghtjdz.github.io/blockstudy/"><img src="./index_files/흠터레스팅.png">
+        <h1 style="font-weight:bold;">블록체인 학습 콘텐츠</h1>
+    </a>
+    <p style="font-size:20px; font-weight:300;" >블록체인을 배워봅시다아~</p>
+</div>
+      
+    </div>
+    
+
+    
+    <div class="git-wiki-page-list">
+  
+    
+
+    <span class="page-list-title" style="font-size:20px; font-weight:300;" >학습 목록 :</span>
+    <ul class="page-list" style="font-size:20px; font-weight:300;">
+    
+        
+        <li class="page-list-item">
+            
+            <a href="https://zdlghtjdz.github.io/blockstudy/wiki/ledgerstory.html">블록체인이 뭐지?</a>
+        </li>
+
+        <li class="page-list-item">
+            
+          <a href="https://zdlghtjdz.github.io/blockstudy/wiki/hash.html">테스트를 해보겠어요~</a>
+      </li>
+      <li class="page-list-item">
+            
+        <a href="https://zdlghtjdz.github.io/blockstudy/wiki/hash1.html">우씨 이거 왜 안돼</a>
+    </li>
+    <li class="page-list-item">
+            
+      <a href="https://zdlghtjdz.github.io/blockstudy/wiki/jquery-texttyper-master/main.html">제목아무거나</a>
+  </li>
+        
+    </ul>
+
+    
+</div>
+    
+
+    
+    <div class="git-wiki-page-list">
+    
+
+
+        
+  
+        
+
+        
+    </ul>
+
+   
+    
+</div>
+    
+
+    
+  </div>
+</header>
+<script>
+  function sidebar_toggle() {
+    var sidebar = document.getElementById("git-wiki-sidebar");
+    if (sidebar.style.display == "block") {
+      sidebar.style.display = "none";
+      sidebar.style.position = "inherit";
+    } else {
+      $(sidebar).attr('style', 'display: block;');
+    }
+  }
+</script>
+
+    <div class="git-wiki-page">
+  <section>
+
+  
+    <div id="git-wiki-toc" style="display: none;"></div>
+
+    
+
+    
+
+    <div id="git-wiki-content">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <style> .toBeRevealed{display:none} </style>
+        
+        <div class="row">
+        
+        <p>아래와 같은 거래 장부가 있다고 가정해 봅시다.</p>
+          
+          <table class = "table_1" table border="1" width ="300" height="100" align = "center">
+            <td colspan = "2" align = "center">거래장부</td>
+            <tr><!-- 첫번째 줄 시작 -->
+                <td width = "300" align = "center">빌려준 금액(원)</td>
+                <td class = "answer1" width = "300"></td>
+            </tr><!-- 첫번째 줄 끝 -->
+            </table>
+        
+        <br><br>	
+        <p> 이 테이블에 여러분이 누군가에게 빌려준 금액을 적는다고 생각해봅시다.</p>
+        <p> 여러분이 빌려준 금액을 입력해 봅시다.</p>
+        <input type="text" id="inputCode1">	
+        <button type="button" class="btn-next1">다음단계</button>
+        
+        <div class = "question2 toBeRevealed">	
+        
+        
+        <table class = "table_2" table border="1" width ="300" height="100" align = "center">
+            <td colspan = "2" align = "center">거래장부</td>
+            <tr><!-- 첫번째 줄 시작 -->
+                <td width = "300" align = "center">빌려준 금액(원)</td>
+                <td class = "answer2" width = "300" align = "center"></td>
+            </tr><!-- 첫번째 줄 끝 -->
+            </table>
+            <p>여러분이 입력한 거래 내역이 쌓여 한 장을 채울 겁니다. 이제 한 장을 복사해 나누어 가지겠습니다.</p>
+            <button type="button" class="btn-next2">다음단계</button>
+        
+        
+          <div class = "question3 toBeRevealed">
+          <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+            <td colspan = "2" align = "center">거래장부1</td>
+            <tr><!-- 첫번째 줄 시작 -->
+                <td width = "300" align = "center">빌려준 금액(원)</td>
+                <td class = "answer2" width = "300" align = "center"></td>
+            </tr><!-- 첫번째 줄 끝 -->
+            </table>
+            <table class = "table_4" table border="1" width ="300" height="100" align = "center">
+                <td colspan = "2" align = "center">거래장부2</td>
+                <tr><!-- 첫번째 줄 시작 -->
+                    <td width = "300" align = "center">빌려준 금액(원)</td>
+                    <td class = "answer3" width = "300" align = "center"></td>
+                </tr><!-- 첫번째 줄 끝 -->
+                </table>
+                <p>이 거래 내역을 가진 사람이 두 사람이라고 생각해봅시다. 두 사람 중 한 사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵겠지요? 
+                    그렇다면 세 사람의 경우를 생각해봅시다.
+                </p>
+                <button type="button" class="btn-next3">다음단계</button> 
+                <div class = "question4 toBeRevealed">
+                    <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+                        <td colspan = "2" align = "center">거래장부1</td>
+                        <tr><!-- 첫번째 줄 시작 -->
+                            <td width = "300" align = "center">빌려준 금액(원)</td>
+                            <td class = "answer2" width = "300" align = "center"></td>
+                        </tr><!-- 첫번째 줄 끝 -->
+                        </table>
+                    <table class = "table_4" table border="1" width ="300" height="100" align = "center">
+                        <td colspan = "2" align = "center">거래장부2</td>
+                        <tr><!-- 첫번째 줄 시작 -->
+                            <td width = "300" align = "center">빌려준 금액(원)</td>
+                            <td class = "answer3" width = "300" align = "center"></td>
+                         </tr><!-- 첫번째 줄 끝 -->
+                         </table>
+                         <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+                            <td colspan = "2" align = "center">거래장부3</td>
+                            <tr><!-- 첫번째 줄 시작 -->
+                                <td width = "300" align = "center">빌려준 금액(원)</td>
+                                <td class = "answer2" width = "300" align = "center"></td>
+                            </tr><!-- 첫번째 줄 끝 -->
+                            </table>
+                     <p>세 사람이 장부를 가지고 있다면 한 사람이 조작하더라도 나머지 사람이 비교해 줄 수 있겠죠?
+                        그렇다면 100명이 같은 거래장부를 가지고 있다면?, 1000명이 가지고 있다면?
+                        장부를 가진 사람이 많을 수록 조작하기 어려워질 겁니다. 
+                        거기다 거래장부에 새롭게 추가되는 페이지가 이전 페이지와 암호로 연결되어 아무나 추가 할 수 없게 한다면?
+                        오직 이전 페이지와 연결되는 암호를 발견한 사람만이 다음 페이지를 추가할 수 있게 될 겁니다. 
+                        그 암호를 발견한 사람에게는 코인이라는 보상이 주어집니다.
+                        위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부릅니다.
+                    </p>
+                    <button type="button" class="btn-next4">다음단계</button> 
+                    </div>
+        
+            </div>
+        
+        
+        </div>
+            
+        
+        </div>
+        
+        
+        <div class="question5 toBeRevealed">
+          <hr>
+          <h3>위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부릅니다.</h3>
+          <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/3">다음으로...</a>
+        </div>
+        
+        <script>
+         (function() {
+              var btn1 = $('.btn-next1');
+              var btn2 = $('.btn-next2');
+              var btn3 = $('.btn-next3');
+              var btn4 = $('.btn-next4');
+              var skipbtn = $('.btn-skip');
+              var IC1 = $('#inputCode1');
+              var Q1 = $('.question1');
+              var Q2 = $('.question2');
+              var Q3 = $('.question3');
+              var Q4 = $('.question4');
+              var Q5 = $('.question5');
+        
+              var answer1 = $('.answer2');
+              var answer2 = $('.answer3');
+        
+              btn1.click(function () {
+        
+                answer1.text(IC1.val() + "원");
+                //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
+                Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+            });
+        
+                btn2.click(function () {
+                    answer2.text(IC1.val() - 1 + "원");
+                    Q3.removeClass('toBeRevealed');
+                });
+        
+                btn3.click(function () {
+                    Q4.removeClass('toBeRevealed');
+                });
+        
+                btn4.click(function () {
+                    Q5.removeClass('toBeRevealed');
+                });
+        
+                skipbtn.click(function () {
+                    Q2.removeClass('toBeRevealed');
+                    Q3.removeClass('toBeRevealed');
+                    Q4.removeClass('toBeRevealed');
+                    Q5.removeClass('toBeRevealed');
+                });
+            })($);
+        
+        
+        </script>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    
+//     var disqus_config = function () {
+//     this.page.url = 'https://zdlghtjdz.github.io/blockstudy;  // Replace PAGE_URL with your page's canonical URL variable
+// //     this.page.identifier = 'dktl1qkf'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+//     };
+   
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://git-wiki.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>다음 사이트를 보려고 하거든 자바스크립트를 enable 시켜주세요 <a href="https://disqus.com/?ref_noscript">Disqus로 생성한 댓글 기능</a></noscript>
+
+    
+  </section>
+</div>
+    <footer>
+    
+
+    
+<div class="git-wiki-copyrights">
+    <p>이 프로젝트는 <a href="https://github.com/zdlghtjdz">zdlghtjdz</a>에 의해 작성되고 있습니다.</p>
+    
+    <p><small>이 기트허브 페이지는 <a href="https://github.com/Drassil/git-wiki">Git-Wiki v2.3.1</a> 로부터 지원받고 있습니다.</small></p><small>
+
+    
+    <p class="view"><a href="https://github.com/zdlghtjdz/blockstudy">프로젝트 기트허브 방문<small></small></a></p>
+</small></div><small>
+
+
+    
+</small></footer><small>
+</small></div><small>
+
+    
+
+<script src="./index_files/scale.fix.js"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#git-wiki-toc').toc({
+            title: '<i>Contents</i>',
+            showSpeed: 0,
+            headers: '#git-wiki-content h1, #git-wiki-content h2, #git-wiki-content h3, #git-wiki-content h4, #git-wiki-content h5, #git-wiki-content h6'
+        });
+        $(document.body).redLinks();
+    });
+</script>
+
+
+
+
+
+</small></body></html>
