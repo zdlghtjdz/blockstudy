@@ -44,12 +44,6 @@
   
   <link rel="shortcut icon" type="image/png" href="https://zdlghtjdz.github.io/blockstudy/assets/images/%ED%9D%A0%ED%84%B0%EB%A0%88%EC%8A%A4%ED%8C%85.png">
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script> 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-        <script type="text/javascript" src="js/main.js"></script>
-        <link rel= "stylesheet" type="text/css" href="css/main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
   
 </head>
 
@@ -88,10 +82,12 @@
     <ul class="page-list" style="font-size:20px; font-weight:300;">
     
         
+          
         <li class="page-list-item">
             
-            <a href="https://zdlghtjdz.github.io/blockstudy/wiki/ledgerstory.html">블록체인이 뭐지?</a>
-        </li>
+          <a href="https://zdlghtjdz.github.io/blockstudy/wiki/ledgerstory.html">블록체인이 뭐지?</a>
+      </li>
+      
 
         <li class="page-list-item">
             
@@ -99,11 +95,11 @@
       </li>
       <li class="page-list-item">
             
-        <a href="https://zdlghtjdz.github.io/blockstudy/wiki/hash1.html">우씨 이거 왜 안돼</a>
+        <a href="https://zdlghtjdz.github.io/blockstudy/wiki/hash1.html">해시 암호화 체험</a>
     </li>
     <li class="page-list-item">
             
-      <a href="https://zdlghtjdz.github.io/blockstudy/wiki/jquery-texttyper-master/main.html">제목아무거나</a>
+      <a href="https://zdlghtjdz.github.io/blockstudy/wiki/main.html">마이닝(채굴) 체험</a>
   </li>
         
     </ul>
@@ -114,11 +110,10 @@
 
     
     <div class="git-wiki-page-list">
+    
 
-        
     </ul>
 
-   
     
 </div>
     
@@ -148,58 +143,54 @@
 
     
 
-    <div id="git-wiki-content" style="margin-bottom:300px; margin-top:50px;">
-
-
-    
-      <div data-gr-c-s-loaded="true">
+    <div id="git-wiki-content">
+        <div data-gr-c-s-loaded="true">
         
-        <div class="container">
-          <h1>SHA256 Hash</h1>
-          <div id="well1" class="well">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="data" class="col-sm-2 control-label">Data:</label>
-                <div class="col-sm-10">
-                  <textarea id="data" rows="10" onkeyup="$(&quot;#hash&quot;).val(sha256())" class="form-control"></textarea>
-                </div>
+            <div class="container">
+              <h1>SHA256 Hash</h1>
+              <div id="well1" class="well">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="data" class="col-sm-2 control-label">Data:</label>
+                    <div class="col-sm-10">
+                      <textarea id="data" rows="10" onkeyup="$(&quot;#hash&quot;).val(sha256())" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="hash" class="col-sm-2 control-label">Hash:</label>
+                    <div class="col-sm-10">
+                      <input id="hash" type="text" disabled="" class="form-control">
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="hash" class="col-sm-2 control-label">Hash:</label>
-                <div class="col-sm-10">
-                  <input id="hash" type="text" disabled="" class="form-control">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <script>function getText(block, chain) {
-          return $('#data').val();
-        }
-        $("#hash").val(sha256());</script>
-        </div>
-
+            </div>
+            <script>function getText(block, chain) {
+              return $('#data').val();
+            }
+            $("#hash").val(sha256());</script>
+            </div>
     
-    <div id="disqus_thread"></div>
-<script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    
-//     var disqus_config = function () {
-//     this.page.url = 'https://zdlghtjdz.github.io/blockstudy;  // Replace PAGE_URL with your page's canonical URL variable
-// //     this.page.identifier = 'dktl1qkf'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-//     };
-   
-    (function () { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://git-wiki.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
         
+        <div id="disqus_thread"></div>
+    <script>
+    
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+    //     var disqus_config = function () {
+    //     this.page.url = 'https://zdlghtjdz.github.io/blockstudy;  // Replace PAGE_URL with your page's canonical URL variable
+    // //     this.page.identifier = 'dktl1qkf'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     };
+       
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://git-wiki.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 
     
     <div id="disqus_thread" style="margin-top:100px;"></div>
