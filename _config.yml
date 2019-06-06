@@ -9,7 +9,7 @@ paginate_path: "/blog/page:num"
 blog_feature: true
 show_wiki_posts: true
 show_wiki_posts_limit: 5
-logo_url: http://zdlghtjdz.github.io/git-wiki/assets/images/흠터레스팅.png
+logo_url: https://github.com/zdlghtjdz/blockstudy/blob/gh-pages/assets/images/%ED%9D%A0%ED%84%B0%EB%A0%88%EC%8A%A4%ED%8C%85.png?raw=true
 google_analytics:
 git_branch: gh-pages
 theme: 
