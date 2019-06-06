@@ -1,7 +1,7 @@
 # (string) Title of your wiki
 title: block-wiki
 description: 블록체인 학습 콘텐츠 모델 
-show_downloads: true
+show_downloads: false
 show_wiki_pages: true
 show_wiki_pages_limit: 10
 paginate: 5
