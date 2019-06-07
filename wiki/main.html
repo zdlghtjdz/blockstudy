@@ -10,28 +10,28 @@
 <body>
 <section id="home">
 <h2>Mining Simulation</h2>
-<p>Block Chain tutorial will be started</p>
-<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
-<p>Mining 이라고 입력해 주세요.</p>
+<p>채굴 프로그래밍이 시동중입니다...p>
+<p><span>다른 명령어를 보고싶다면 help라고 입력해주세요.</span></p>
+<p>마이닝 이라고 입력해 주세요.</p>
 </section>
 
-<section id="Mining">
+<section id="마이닝">
 <h2><span>&raquo;Mining...</span></h2>
 <p>
 
-Starting mining operation 
-<p> Updated mining threads                   threads=0
-<p> Transaction pool price threshold updated price=18000000000
-<p> Starting mining operation 
-<p> Commit new mining work                   number=42 txs=0 uncles=0 elapsed=0s
-<p> Generating DAG in progress               epoch=1 elapsed=1m4.074s
-<p> Successfully sealed new block            number=42 hash =
-<p> 🔨 mined potential block                  number=42 hash=
-<p> Commit new mining work                   number=43 txs=0 uncles=0 elapsed=0s
-<p> Generating DAG in progress               epoch=1 elapsed=1m6.668s
-<p> Successfully sealed new block            number=43 hash =
-<p> 🔨 mined potential block                  number=43 hash =
-<p> Mining Operation End..
+채굴이 준비중입니다...
+<p> 이전을 블록을 업데이트 중입니다..                  threads=0
+<p> 트랜젝션의 최대범위를 설정합니다. = 1800000000
+<p> 채굴 작업을 시작합니다.
+<p> 트랜젝션을 모으는 작업이 진행중입니다...    number=42 txs=0 uncles=0 elapsed=0s
+<p> 진행중입니다...              		epoch=1 elapsed=1m4.074s
+<p> 블럭에 모든 트랜젝션을 성공적으로 담았습니다! number=42 hash 키 값이 생성됨=
+<p> 🔨 블럭이 성공적으로 채굴되었습니다.	 number=42 hash 키 값이 생성됨
+<p> 트랜젝션을 모으는 작업이 진행중입니다...    number=43 txs=0 uncles=0 elapsed=0s
+<p> 진행중입니다...		              	 epoch=1 elapsed=1m6.668s
+<p> 블럭에 모든 트랜젝션을 성공적으로 담았습니다! number=43 hash 키 값이 생성됨=
+<p> 🔨 블럭이 성공적으로 채굴되었습니다.        number=43 hash 키 값이 생성됨=
+<p> 채굴이 완료되었습니다.
    
 </section>
 
@@ -175,7 +175,7 @@ function GenerateHMAC(key, payload) {
 	var message = btoa(payload + timestamp);
 	var hash = CryptoJS.HmacSHA256(message, key);
     var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
-        $('#Mining p:contains("block")').append(hashInBase64);
+        $('#Mining p:contains("블럭")').append(hashInBase64);
 }
 </script>
 <script>		
