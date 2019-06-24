@@ -26,7 +26,7 @@
 <p> 트랜젝션을 모으는 작업이 진행중입니다...    number=42 txs=0 uncles=0 elapsed=0s
 <p> 진행중입니다...              		epoch=1 elapsed=1m4.074s
 <p> 블럭에 모든 트랜젝션을 성공적으로 담았습니다! number=42 hash 키 값이 생성됨=
-<p> 🔨 블럭이 성공적으로 채굴되었습니다.	 number=42 hash 키 값이 생성됨
+<p> 🔨 블럭이 성공적으로 채굴되었습니다.	 number=42 hash 키 값이 생성됨=
 <p> 트랜젝션을 모으는 작업이 진행중입니다...    number=43 txs=0 uncles=0 elapsed=0s
 <p> 진행중입니다...		              	 epoch=1 elapsed=1m6.668s
 <p> 블럭에 모든 트랜젝션을 성공적으로 담았습니다! number=43 hash 키 값이 생성됨=
@@ -175,7 +175,7 @@ function GenerateHMAC(key, payload) {
 	var message = btoa(payload + timestamp);
 	var hash = CryptoJS.HmacSHA256(message, key);
     var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
-        $('#Mining p:contains("블럭")').append(hashInBase64);
+        $('#마이닝 p:contains("블럭")').append(hashInBase64);
 }
 </script>
 <script>		
